@@ -1,0 +1,173 @@
+/* ============================= */
+/* LOGIN PAGE */
+/* ============================= */
+
+.login-page {
+  min-height: 100vh;
+  background: #eef5f8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+
+.login-card {
+  width: 400px;
+  max-width: 100%;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 35px rgba(20, 60, 80, 0.10);
+
+  text-align: center;
+}
+
+
+.login-icon {
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #168aad;
+  color: white;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.login-card h1 {
+  color: #0d3b52;
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+
+
+.login-subtitle {
+  color: #71838d;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+.login-card label {
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #506574;
+
+  margin-top: 12px;
+  margin-bottom: 7px;
+}
+
+
+.login-card input {
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #d4e0e6;
+
+  border-radius: 9px;
+
+  font-size: 14px;
+
+  outline: none;
+
+  background: #f9fcfd;
+}
+
+
+.login-card input:focus {
+  border-color: #2a9d8f;
+
+  background: white;
+
+  box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.1);
+}
+
+
+.login-card button {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #168aad;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+.login-card button:hover {
+  background: #126782;
+}
+
+
+.login-error {
+  color: #d62828;
+
+  font-size: 13px;
+
+  margin-top: 12px;
+
+  text-align: center;
+}
+
+
+/* ============================= */
+/* LOGOUT BUTTON */
+/* ============================= */
+
+.logout-button {
+  background: rgba(255, 255, 255, 0.15);
+
+  color: white;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  padding: 8px 15px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+
+.logout-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}

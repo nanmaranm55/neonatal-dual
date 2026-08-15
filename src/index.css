@@ -1,0 +1,575 @@
+/* ============================= */
+/* LOGIN PAGE */
+/* ============================= */
+
+.login-page {
+  min-height: 100vh;
+  background: #eef5f8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+
+.login-card {
+  width: 400px;
+  max-width: 100%;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 35px rgba(20, 60, 80, 0.10);
+
+  text-align: center;
+}
+
+
+.login-icon {
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #168aad;
+  color: white;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.login-card h1 {
+  color: #0d3b52;
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+
+
+.login-subtitle {
+  color: #71838d;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+.login-card label {
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #506574;
+
+  margin-top: 12px;
+  margin-bottom: 7px;
+}
+
+
+.login-card input {
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #d4e0e6;
+
+  border-radius: 9px;
+
+  font-size: 14px;
+
+  outline: none;
+
+  background: #f9fcfd;
+}
+
+
+.login-card input:focus {
+  border-color: #2a9d8f;
+
+  background: white;
+
+  box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.1);
+}
+
+
+.login-card button {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #168aad;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+.login-card button:hover {
+  background: #126782;
+}
+
+
+.login-error {
+  color: #d62828;
+
+  font-size: 13px;
+
+  margin-top: 12px;
+
+  text-align: center;
+}
+
+
+/* ============================= */
+/* LOGOUT BUTTON */
+/* ============================= */
+
+.logout-button {
+  background: rgba(255, 255, 255, 0.15);
+
+  color: white;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  padding: 8px 15px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+
+.logout-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+/* ============================= */
+/* GLOBAL */
+/* ============================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef5f8;
+  color: #243746;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.header {
+  background: #0d3b52;
+  color: white;
+  padding: 24px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.header p {
+  margin-top: 5px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+
+/* ============================= */
+/* PAGE 1 */
+/* ============================= */
+
+.page {
+  min-height: 100vh;
+  background: #eef5f8;
+}
+
+.patient-card {
+  width: 650px;
+  max-width: 92%;
+  margin: 45px auto;
+  background: white;
+  padding: 35px 45px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(20, 60, 80, 0.08);
+}
+
+.patient-card h2 {
+  text-align: left;
+  color: #0d3b52;
+  font-size: 22px;
+  margin-bottom: 25px;
+  border-left: 4px solid #2a9d8f;
+  padding-left: 12px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+}
+
+form label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #506574;
+  margin-top: 14px;
+  margin-bottom: 7px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #d4e0e6;
+  border-radius: 9px;
+  font-size: 14px;
+  background: #f9fcfd;
+  outline: none;
+  transition: 0.2s;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #2a9d8f;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.1);
+}
+
+.input-with-unit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-with-unit input {
+  flex: 1;
+}
+
+.input-with-unit span {
+  font-size: 13px;
+  color: #70838f;
+  min-width: 35px;
+}
+
+
+/* START BUTTON */
+
+form button {
+  grid-column: 1 / -1;
+  margin-top: 30px;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #168aad;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background: #126782;
+  transform: translateY(-1px);
+}
+
+
+/* ============================= */
+/* DASHBOARD */
+/* ============================= */
+
+.dashboard {
+  min-height: 100vh;
+  background: #eef5f8;
+}
+
+
+/* ============================= */
+/* PATIENT INFORMATION */
+/* ============================= */
+
+.patient-info {
+  width: 90%;
+  max-width: 1100px;
+  margin: 22px auto;
+  background: white;
+  padding: 16px 22px;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 4px 18px rgba(20, 60, 80, 0.06);
+}
+
+.patient-info div {
+  font-size: 14px;
+  color: #607683;
+}
+
+.patient-info strong {
+  color: #0d3b52;
+}
+
+
+/* ============================= */
+/* MAIN BILIRUBIN */
+/* ============================= */
+
+.main-reading {
+  width: 90%;
+  max-width: 700px;
+  margin: 25px auto;
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 0 7px 25px rgba(20, 60, 80, 0.08);
+}
+
+.main-reading h2 {
+  color: #607683;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.bilirubin-value {
+  font-size: 46px;
+  font-weight: 700;
+  color: #0d3b52;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 7px 18px;
+  border-radius: 20px;
+  background: #fff4d6;
+  color: #a56a00;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+
+/* ============================= */
+/* SENSOR CARDS */
+/* ============================= */
+
+.sensor-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 25px auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.sensor-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(20, 60, 80, 0.06);
+  border-top: 3px solid #2a9d8f;
+}
+
+.sensor-card h3 {
+  color: #607683;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.sensor-value {
+  font-size: 27px;
+  font-weight: 700;
+  color: #0d3b52;
+}
+
+.sensor-card p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #2a9d8f;
+}
+
+
+/* ============================= */
+/* GRAPH */
+/* ============================= */
+
+.graph-card {
+  width: 90%;
+  max-width: 1100px;
+  margin: 25px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(20, 60, 80, 0.06);
+}
+
+.graph-card h2 {
+  color: #0d3b52;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.graph-subtitle {
+  color: #7a8c96;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.graph {
+  width: 100%;
+  height: 300px;
+}
+
+
+/* ============================= */
+/* CURRENT MEASUREMENT */
+/* ============================= */
+
+.monitor-card {
+  width: 90%;
+  max-width: 1100px;
+  margin: 25px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(20, 60, 80, 0.06);
+}
+
+.monitor-card h2 {
+  color: #0d3b52;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.measurement-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 5px;
+  border-bottom: 1px solid #e6eef2;
+  font-size: 14px;
+}
+
+.measurement-row span {
+  color: #667b87;
+}
+
+.measurement-row strong {
+  color: #0d3b52;
+}
+
+
+/* ============================= */
+/* BACK BUTTON */
+/* ============================= */
+
+.back-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 20px auto 40px;
+}
+
+.back-button {
+  margin-top: 0;
+  background: #607683;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.back-button:hover {
+  background: #455963;
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 750px) {
+
+  .header {
+    padding: 20px;
+    display: block;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .patient-card {
+    padding: 25px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  form button {
+    grid-column: auto;
+  }
+
+  .patient-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .sensor-container {
+    grid-template-columns: 1fr;
+  }
+
+  .bilirubin-value {
+    font-size: 38px;
+  }
+}
